@@ -54,7 +54,7 @@ namespace BombsAway
             {
                 foreach (PictureBox Obj in WorldObjects)
                 {   //Or if it's not colliding with anything
-                    if (!tar.Bounds.IntersectsWith(Obj.Bounds))
+                     if (!tar.Bounds.IntersectsWith(Obj.Bounds))
                     {
                         if (tar.Location.Y < WorldFrame.Width)
                         {   //And it's not under ground for some reason
@@ -290,6 +290,7 @@ namespace BombsAway
                 }
                 x2++;
             }
+
             pb_Player.Visible = true;   //Sets the player visible and moves him to start location
             pb_Player.Location = new System.Drawing.Point(167, WorldFrame.Size.Height - 10 - pb_Player.Height);
             pb_NPC1.Location = new System.Drawing.Point(1, WorldFrame.Size.Height - 1 - pb_NPC1.Height);

@@ -97,6 +97,7 @@
     <EmbeddedResource Include="Enemy.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Enemy.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -132,24 +133,6 @@
     <None Include="Resources\floor.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\jump_l.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\jump_r.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\stand_l.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\stand_r.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\walk_l.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\walk_r.gif" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Bush.png" />
   </ItemGroup>
   <ItemGroup>
@@ -175,6 +158,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bomb.ico" />
+    <None Include="Resources\walk_r.gif" />
+    <None Include="Resources\walk_l.gif" />
+    <None Include="Resources\stand_r.png" />
+    <None Include="Resources\stand_l.png" />
+    <None Include="Resources\jump_r.png" />
+    <None Include="Resources\jump_l.png" />
     <None Include="Resources\beach-background.jpg" />
     <None Include="Resources\Platform.png" />
     <None Include="Resources\Enemy-right.png" />
