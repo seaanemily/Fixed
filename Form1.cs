@@ -839,9 +839,9 @@ namespace BombsAway
         private void Form1_Load(object sender, EventArgs e)
         {
             Reset();
-            WorldObjects[0] = pb_Pipe;
-            WorldObjects[1] = pb_Block1;
-            WorldObjects[2] = pb_Block2;
+            //WorldObjects[0] = pb_Pipe;
+            //WorldObjects[1] = pb_Block1;
+            //WorldObjects[2] = pb_Block2;
             DebugMenu[0] = this.debug_Log;
             DebugMenu[1] = this.debug_Godmode;
             DebugMenu[2] = this.debug_NoBombs;
