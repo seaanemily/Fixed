@@ -54,7 +54,7 @@ namespace BombsAway
             {
                 foreach (PictureBox Obj in WorldObjects)
                 {   //Or if it's not colliding with anything
-                                      if (!tar.Bounds.IntersectsWith(Obj.Bounds))
+                    //if (!tar.Bounds.IntersectsWith(Obj.Bounds))
                     {
                         if (tar.Location.Y < WorldFrame.Width)
                         {   //And it's not under ground for some reason
