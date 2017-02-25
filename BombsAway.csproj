@@ -158,6 +158,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bomb.ico" />
+    <None Include="Resources\sword_r.png" />
+    <None Include="Resources\sword_l.png" />
+    <None Include="Resources\victory_l.png" />
+    <None Include="Resources\victory_r.png" />
     <None Include="Resources\walk_r.gif" />
     <None Include="Resources\walk_l.gif" />
     <None Include="Resources\stand_r.png" />

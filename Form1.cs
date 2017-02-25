@@ -34,6 +34,8 @@ namespace BombsAway
         Boolean Player_Left = false;    //.. moving to the left
         Boolean Player_Right = false;   //.. moving to the right
         Boolean LastDirRight = true;    // Whats the last dir facing
+        Boolean Sword_L = false;        //Player's sword swing left
+        Boolean Sword_R = false;        //Player's sword swing right
         Boolean GameOn = false;         //Is the game on?
         Boolean GodMode = false;
         //Boolean Debug = false;
@@ -386,6 +388,22 @@ namespace BombsAway
                         Player_Right = true;
                     }
                     break;
+                case Keys.F:
+                    if(GameOn)
+                    {
+                        LastDirRight = false;
+                        Sword_L = true;
+                        pb_Player.Image = Character.sword_l;
+                    }
+                    break;
+                case Keys.G:
+                    if (GameOn)
+                    {
+                        LastDirRight = true;
+                        Sword_R = true;
+                        pb_Player.Image = Character.sword_r;
+                    }
+                    break;
                 case Keys.Space:    // On Space Keypress down
                     if (label_Dead.Visible && !label_Dead.Text.Contains("Paused"))
                     {               // If pressed Space and the death label is shown
@@ -510,7 +528,14 @@ namespace BombsAway
             {
                 if (npc.Bounds.IntersectsWith(pb_Player.Bounds))
                 {
-                    Dead();
+                    if(Sword_R == true || Sword_L == true)
+                    {
+                        npc.Dispose();
+                    }
+                    else
+                    {
+                        Dead();
+                    }
                 }
                 else
                 {
