@@ -48,6 +48,7 @@ namespace BombsAway
         int Speed_Jump = 3;
         int Speed_Fall = 3;
         int Score = 0;
+        int Time = 100;
         #endregion
         #region Boolean Functions, "Check functions"
         public Boolean InAirNoCollision(PictureBox tar)
@@ -446,6 +447,16 @@ namespace BombsAway
                         LastDirRight = true;
                         Player_Right = false;
                         break;
+                    case Keys.F:
+                        pb_Player.Image = Character.stand_l;
+                        LastDirRight = false;
+                        Player_Left = false;
+                        break;
+                    case Keys.G:
+                        pb_Player.Image = Character.stand_r;
+                        LastDirRight = true;
+                        Player_Right = false;
+                        break;
                 }
             }
         }
@@ -745,13 +756,13 @@ namespace BombsAway
 
         private void timer_Sec_Tick(object sender, EventArgs e)
         {
-            for (int i = 0; i < 10; i++)
+            /*for (int i = 0; i < 10; i++)
             {
-                /*if (Bombs[i] != null && Bombs[i].IsDisposed)
+                if (Bombs[i] != null && Bombs[i].IsDisposed)
                 {
                     Bombs[i] = null;
-                }*/
-            }
+                }
+            }*/
             label_Score.Text = "Score: " + Score;
             if (!label_Dead.Visible)
             {
