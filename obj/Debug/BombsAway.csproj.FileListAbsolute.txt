@@ -22,3 +22,15 @@ C:\Users\ehbal822\Source\Repos\Fixed\obj\Debug\BombsAway.Form1.resources
 C:\Users\ehbal822\Source\Repos\Fixed\obj\Debug\BombsAway.Properties.Resources.resources
 C:\Users\ehbal822\Source\Repos\Fixed\obj\Debug\BombsAway.World.resources
 C:\Users\ehbal822\Source\Repos\Fixed\obj\Debug\BombsAway.csproj.GenerateResource.Cache
+C:\Users\lekro_000\Source\Repos\Fixed\bin\Debug\BombsAway.exe.config
+C:\Users\lekro_000\Source\Repos\Fixed\obj\Debug\BombsAway.exe
+C:\Users\lekro_000\Source\Repos\Fixed\obj\Debug\BombsAway.pdb
+C:\Users\lekro_000\Source\Repos\Fixed\bin\Debug\BombsAway.exe
+C:\Users\lekro_000\Source\Repos\Fixed\bin\Debug\BombsAway.pdb
+C:\Users\lekro_000\Source\Repos\Fixed\obj\Debug\BombsAway.csprojResolveAssemblyReference.cache
+C:\Users\lekro_000\Source\Repos\Fixed\obj\Debug\BombsAway.Character.resources
+C:\Users\lekro_000\Source\Repos\Fixed\obj\Debug\BombsAway.Enemy.resources
+C:\Users\lekro_000\Source\Repos\Fixed\obj\Debug\BombsAway.Form1.resources
+C:\Users\lekro_000\Source\Repos\Fixed\obj\Debug\BombsAway.Properties.Resources.resources
+C:\Users\lekro_000\Source\Repos\Fixed\obj\Debug\BombsAway.World.resources
+C:\Users\lekro_000\Source\Repos\Fixed\obj\Debug\BombsAway.csproj.GenerateResource.Cache

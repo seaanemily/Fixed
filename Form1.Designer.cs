@@ -37,27 +37,27 @@
             this.timer_Gravity = new System.Windows.Forms.Timer(this.components);
             this.timer_Jump = new System.Windows.Forms.Timer(this.components);
             this.timer_Anim = new System.Windows.Forms.Timer(this.components);
-            this.timer_Randombomb = new System.Windows.Forms.Timer(this.components);
-            this.timer_BombFailsafe = new System.Windows.Forms.Timer(this.components);
+            //this.timer_Randombomb = new System.Windows.Forms.Timer(this.components);
+            //this.timer_BombFailsafe = new System.Windows.Forms.Timer(this.components);
             this.timer_Sec = new System.Windows.Forms.Timer(this.components);
-            this.timerBoomRemove = new System.Windows.Forms.Timer(this.components);
+            //this.timerBoomRemove = new System.Windows.Forms.Timer(this.components);
             this.WorldFloor = new System.Windows.Forms.Panel();
-            this.debug_MSpeed = new System.Windows.Forms.Label();
-            this.debug_Log = new System.Windows.Forms.Label();
-            this.debug_PSpeed = new System.Windows.Forms.Label();
-            this.debug_Godmode = new System.Windows.Forms.Label();
-            this.debug_MJump = new System.Windows.Forms.Label();
-            this.debug_NoBombs = new System.Windows.Forms.Label();
-            this.debug_PJump = new System.Windows.Forms.Label();
-            this.debug_PGravity = new System.Windows.Forms.Label();
-            this.debug_MGravity = new System.Windows.Forms.Label();
+            //this.debug_MSpeed = new System.Windows.Forms.Label();
+            //this.debug_Log = new System.Windows.Forms.Label();
+            //this.debug_PSpeed = new System.Windows.Forms.Label();
+            //this.debug_Godmode = new System.Windows.Forms.Label();
+            //this.debug_MJump = new System.Windows.Forms.Label();
+            //this.debug_NoBombs = new System.Windows.Forms.Label();
+            //this.debug_PJump = new System.Windows.Forms.Label();
+            //this.debug_PGravity = new System.Windows.Forms.Label();
+            //this.debug_MGravity = new System.Windows.Forms.Label();
             this.WorldFrame = new System.Windows.Forms.Panel();
             this.pb_NPC2 = new System.Windows.Forms.PictureBox();
             this.pb_NPC1 = new System.Windows.Forms.PictureBox();
             this.label_Dead = new System.Windows.Forms.Label();
-            this.pb_Block1 = new System.Windows.Forms.PictureBox();
-            this.pb_Block2 = new System.Windows.Forms.PictureBox();
-            this.pb_Pipe = new System.Windows.Forms.PictureBox();
+            //this.pb_Block1 = new System.Windows.Forms.PictureBox();
+            //this.pb_Block2 = new System.Windows.Forms.PictureBox();
+            //this.pb_Pipe = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label_Score = new System.Windows.Forms.Label();
@@ -67,9 +67,9 @@
             this.WorldFrame.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_NPC2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_NPC1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Block1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Block2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Pipe)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.pb_Block1)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.pb_Block2)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.pb_Pipe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,7 +123,7 @@
             // 
             // timer_Randombomb
             // 
-            this.timer_Randombomb.Enabled = true;
+            /*this.timer_Randombomb.Enabled = true;
             this.timer_Randombomb.Interval = 800;
             this.timer_Randombomb.Tick += new System.EventHandler(this.timer_Randombomb_Tick);
             // 
@@ -131,7 +131,7 @@
             // 
             this.timer_BombFailsafe.Enabled = true;
             this.timer_BombFailsafe.Interval = 3000;
-            this.timer_BombFailsafe.Tick += new System.EventHandler(this.timer_BombFailsafe_Tick);
+            this.timer_BombFailsafe.Tick += new System.EventHandler(this.timer_BombFailsafe_Tick);*/
             // 
             // timer_Sec
             // 
@@ -141,21 +141,21 @@
             // 
             // timerBoomRemove
             // 
-            this.timerBoomRemove.Enabled = true;
-            this.timerBoomRemove.Tick += new System.EventHandler(this.timerBoomRemove_Tick);
+            //this.timerBoomRemove.Enabled = true;
+            //this.timerBoomRemove.Tick += new System.EventHandler(this.timerBoomRemove_Tick);
             // 
             // WorldFloor
             // 
             this.WorldFloor.BackgroundImage = global::BombsAway.Properties.Resources.floor;
-            this.WorldFloor.Controls.Add(this.debug_MSpeed);
-            this.WorldFloor.Controls.Add(this.debug_Log);
+            /*this.WorldFloor.Controls.Add(this.debug_MSpeed);
+            //this.WorldFloor.Controls.Add(this.debug_Log);
             this.WorldFloor.Controls.Add(this.debug_PSpeed);
             this.WorldFloor.Controls.Add(this.debug_Godmode);
             this.WorldFloor.Controls.Add(this.debug_MJump);
             this.WorldFloor.Controls.Add(this.debug_NoBombs);
             this.WorldFloor.Controls.Add(this.debug_PJump);
             this.WorldFloor.Controls.Add(this.debug_PGravity);
-            this.WorldFloor.Controls.Add(this.debug_MGravity);
+            this.WorldFloor.Controls.Add(this.debug_MGravity);*/
             this.WorldFloor.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.WorldFloor.Location = new System.Drawing.Point(0, 240);
             this.WorldFloor.Name = "WorldFloor";
@@ -164,7 +164,7 @@
             // 
             // debug_MSpeed
             // 
-            this.debug_MSpeed.AutoSize = true;
+            /*this.debug_MSpeed.AutoSize = true;
             this.debug_MSpeed.BackColor = System.Drawing.Color.Transparent;
             this.debug_MSpeed.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold);
             this.debug_MSpeed.ForeColor = System.Drawing.Color.Black;
@@ -174,11 +174,11 @@
             this.debug_MSpeed.TabIndex = 8;
             this.debug_MSpeed.Text = "[- Speed]";
             this.debug_MSpeed.Visible = false;
-            this.debug_MSpeed.Click += new System.EventHandler(this.debug_MSpeed_Click);
+            this.debug_MSpeed.Click += new System.EventHandler(this.debug_MSpeed_Click);*/
             // 
             // debug_Log
             // 
-            this.debug_Log.AutoSize = true;
+            /*this.debug_Log.AutoSize = true;
             this.debug_Log.BackColor = System.Drawing.Color.Transparent;
             this.debug_Log.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold);
             this.debug_Log.ForeColor = System.Drawing.Color.Black;
@@ -234,7 +234,7 @@
             // 
             // debug_NoBombs
             // 
-            this.debug_NoBombs.AutoSize = true;
+            /*this.debug_NoBombs.AutoSize = true;
             this.debug_NoBombs.BackColor = System.Drawing.Color.Transparent;
             this.debug_NoBombs.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold);
             this.debug_NoBombs.ForeColor = System.Drawing.Color.Black;
@@ -286,7 +286,7 @@
             this.debug_MGravity.TabIndex = 4;
             this.debug_MGravity.Text = "[- Gravity]";
             this.debug_MGravity.Visible = false;
-            this.debug_MGravity.Click += new System.EventHandler(this.debug_MGravity_Click);
+            this.debug_MGravity.Click += new System.EventHandler(this.debug_MGravity_Click);*/
             // 
             // WorldFrame
             // 
@@ -297,9 +297,9 @@
             this.WorldFrame.Controls.Add(this.pb_NPC2);
             this.WorldFrame.Controls.Add(this.pb_NPC1);
             this.WorldFrame.Controls.Add(this.label_Dead);
-            this.WorldFrame.Controls.Add(this.pb_Block1);
+            /*this.WorldFrame.Controls.Add(this.pb_Block1);
             this.WorldFrame.Controls.Add(this.pb_Block2);
-            this.WorldFrame.Controls.Add(this.pb_Pipe);
+            this.WorldFrame.Controls.Add(this.pb_Pipe);*/
             this.WorldFrame.Controls.Add(this.label2);
             this.WorldFrame.Controls.Add(this.label1);
             this.WorldFrame.Controls.Add(this.label_Score);
@@ -347,7 +347,7 @@
             // 
             // pb_Block1
             // 
-            this.pb_Block1.BackColor = System.Drawing.Color.Gray;
+            /*this.pb_Block1.BackColor = System.Drawing.Color.Gray;
             this.pb_Block1.BackgroundImage = global::BombsAway.World.Platform;
             this.pb_Block1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pb_Block1.Location = new System.Drawing.Point(451, 182);
@@ -374,7 +374,7 @@
             this.pb_Pipe.Name = "pb_Pipe";
             this.pb_Pipe.Size = new System.Drawing.Size(35, 45);
             this.pb_Pipe.TabIndex = 5;
-            this.pb_Pipe.TabStop = false;
+            this.pb_Pipe.TabStop = false;*/
             // 
             // label2
             // 
@@ -442,9 +442,9 @@
             this.WorldFrame.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_NPC2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_NPC1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Block1)).EndInit();
+            /*((System.ComponentModel.ISupportInitialize)(this.pb_Block1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Block2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Pipe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Pipe)).EndInit();*/
             ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).EndInit();
             this.ResumeLayout(false);
 
@@ -458,28 +458,28 @@
         private System.Windows.Forms.Timer timer_Gravity;
         private System.Windows.Forms.Timer timer_Jump;
         private System.Windows.Forms.Timer timer_Anim;
-        private System.Windows.Forms.Timer timer_Randombomb;
-        private System.Windows.Forms.Timer timer_BombFailsafe;
+        //private System.Windows.Forms.Timer timer_Randombomb;
+        //private System.Windows.Forms.Timer timer_BombFailsafe;
         private System.Windows.Forms.Label label_Dead;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem debugToolStripMenuItem;
         private System.Windows.Forms.Label label_Score;
         private System.Windows.Forms.Timer timer_Sec;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Timer timerBoomRemove;
+        //private System.Windows.Forms.Timer timerBoomRemove;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pb_Pipe;
-        private System.Windows.Forms.Label debug_Log;
-        private System.Windows.Forms.PictureBox pb_Block1;
-        private System.Windows.Forms.PictureBox pb_Block2;
-        private System.Windows.Forms.Label debug_Godmode;
+        //private System.Windows.Forms.PictureBox pb_Pipe;
+        //private System.Windows.Forms.Label debug_Log;
+        //private System.Windows.Forms.PictureBox pb_Block1;
+        //private System.Windows.Forms.PictureBox pb_Block2;
+        /*private System.Windows.Forms.Label debug_Godmode;
         private System.Windows.Forms.Label debug_NoBombs;
         private System.Windows.Forms.Label debug_MGravity;
         private System.Windows.Forms.Label debug_PGravity;
         private System.Windows.Forms.Label debug_MSpeed;
         private System.Windows.Forms.Label debug_PSpeed;
         private System.Windows.Forms.Label debug_MJump;
-        private System.Windows.Forms.Label debug_PJump;
+        private System.Windows.Forms.Label debug_PJump;*/
         private System.Windows.Forms.ToolStripMenuItem onToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem offToolStripMenuItem;
         private System.Windows.Forms.PictureBox pb_NPC1;
