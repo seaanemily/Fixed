@@ -300,7 +300,7 @@ namespace BombsAway
             pb_NPC2.Location = new System.Drawing.Point(WorldFrame.Width-10, WorldFrame.Size.Height - 1 - pb_NPC2.Height);
             pb_Player.Image = Character.stand_r;
             Score = 0;
-            BombSize = 16;
+            Time = 100;
             GameOn = true;
         }
         /*public void CreateBoom(int x, int y)
@@ -367,6 +367,7 @@ namespace BombsAway
                         GameOn = false;         //Game Pauses
                         label_Dead.Text = "Paused, press P to Continue";
                         label_Dead.Visible = true;
+                        
                     }
                     else
                     {
@@ -541,7 +542,9 @@ namespace BombsAway
                 {
                     if(Sword_R == true || Sword_L == true)
                     {
+                        //Score = Score + 1;
                         npc.Dispose();
+                        //.Text = "Score: " + Score;
                     }
                     else
                     {
@@ -763,10 +766,15 @@ namespace BombsAway
                     Bombs[i] = null;
                 }
             }*/
-            label_Score.Text = "Score: " + Score;
+            label1.Text = "Time Left:" + Time--;
+            if(Time <= 0)
+            {
+                GameOn = false;
+                label_Dead.Visible = true;
+                label_Dead.Text = "You ran out of time. Press Space to restart";
+            }
             if (!label_Dead.Visible)
             {
-                Score++;
                 //BombSize++;
                 /*if (timer_Randombomb.Interval > 1)
                 {
@@ -891,6 +899,20 @@ namespace BombsAway
         }
 
         private void WorldFrame_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Time--;           
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void GetTimeLeft()
         {
 
         }
