@@ -169,7 +169,7 @@
             this.label_Dead.Name = "label_Dead";
             this.label_Dead.Size = new System.Drawing.Size(187, 13);
             this.label_Dead.TabIndex = 1;
-            this.label_Dead.Text = "You died, press Space to start";
+            label_Dead.Text = "You died.";
             this.label_Dead.Visible = false;
             // 
             // label2
