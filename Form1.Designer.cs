@@ -40,13 +40,14 @@
             this.timer_Sec = new System.Windows.Forms.Timer(this.components);
             this.WorldFloor = new System.Windows.Forms.Panel();
             this.WorldFrame = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pb_NPC2 = new System.Windows.Forms.PictureBox();
             this.pb_NPC1 = new System.Windows.Forms.PictureBox();
             this.label_Dead = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label_Score = new System.Windows.Forms.Label();
             this.pb_Player = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.enemytimer = new System.Windows.Forms.Timer(this.components);
             this.contextMenuStrip1.SuspendLayout();
             this.WorldFrame.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_NPC2)).BeginInit();
@@ -137,6 +138,18 @@
             this.WorldFrame.TabIndex = 0;
             this.WorldFrame.Paint += new System.Windows.Forms.PaintEventHandler(this.WorldFrame_Paint);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(4, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Time Left:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // pb_NPC2
             // 
             this.pb_NPC2.BackColor = System.Drawing.Color.Transparent;
@@ -167,9 +180,9 @@
             this.label_Dead.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Dead.Location = new System.Drawing.Point(236, 113);
             this.label_Dead.Name = "label_Dead";
-            this.label_Dead.Size = new System.Drawing.Size(187, 13);
+            this.label_Dead.Size = new System.Drawing.Size(61, 13);
             this.label_Dead.TabIndex = 1;
-            label_Dead.Text = "You died.";
+            label_Dead.Text = "You died. Press Space to restart.";
             this.label_Dead.Visible = false;
             // 
             // label2
@@ -204,17 +217,10 @@
             this.pb_Player.TabIndex = 0;
             this.pb_Player.TabStop = false;
             // 
-            // label1
+            // enemytimer
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Time Left:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.enemytimer.Interval = 1000;
+            this.enemytimer.Tick += new System.EventHandler(this.enemytimer_Tick);
             // 
             // Form1
             // 
@@ -277,6 +283,7 @@
         private System.Windows.Forms.PictureBox pb_NPC1;
         private System.Windows.Forms.PictureBox pb_NPC2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer enemytimer;
     }
 }
 

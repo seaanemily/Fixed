@@ -393,17 +393,38 @@ namespace BombsAway
                 case Keys.F:
                     if(GameOn)
                     {
-                        LastDirRight = false;
-                        Sword_L = true;
-                        pb_Player.Image = Character.sword_l;
+                        if(Player_Left == true)
+                        {
+                            LastDirRight = false;   //For the animation, stand right or left
+                            Player_Left = true;
+                            Sword_L = false;
+                        }
+                        else
+                        {
+                            LastDirRight = false;
+                            Player_Left = false;
+                            Sword_L = true;
+                            pb_Player.Image = Character.sword_l;
+                        }
+                        
                     }
                     break;
                 case Keys.G:
                     if (GameOn)
                     {
-                        LastDirRight = true;
-                        Sword_R = true;
-                        pb_Player.Image = Character.sword_r;
+                        if(Player_Right == true)
+                        {
+                            LastDirRight = true;
+                            Player_Right = true;
+                            Sword_R = false;
+                        }
+                        else
+                        {
+                            LastDirRight = true;
+                            Player_Right = false;
+                            Sword_R = true;
+                            pb_Player.Image = Character.sword_r;
+                        }
                     }
                     break;
                 case Keys.Space:    // On Space Keypress down
@@ -545,6 +566,10 @@ namespace BombsAway
                         //Score = Score + 1;
                         npc.Dispose();
                         //.Text = "Score: " + Score;
+                    }
+                    else
+                    {
+                        Dead();
                     }
                     /*else
                     {
@@ -924,6 +949,11 @@ namespace BombsAway
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void enemytimer_Tick(object sender, EventArgs e)
         {
 
         }
