@@ -49,7 +49,7 @@ namespace BombsAway
         int Speed_Jump = 4;
         int Speed_Fall = 4;
         int Score = 0;
-        int Time = 100;
+        int Time = 60;
         #endregion
         #region Boolean Functions, "Check functions"
         public Boolean InAirNoCollision(PictureBox tar)
@@ -301,7 +301,7 @@ namespace BombsAway
             pb_NPC2.Location = new System.Drawing.Point(WorldFrame.Width-10, WorldFrame.Size.Height - 1 - pb_NPC2.Height);
             pb_Player.Image = Character.stand_r;
             Score = 0;
-            Time = 100;
+            Time = 60;
             GameOn = true;
         }
         /*public void CreateBoom(int x, int y)
@@ -546,7 +546,7 @@ namespace BombsAway
                         npc.Dispose();
                         //.Text = "Score: " + Score;
                     }
-                    else
+                    /*else
                     {
                         if(lives <= 0)
                         {
@@ -560,7 +560,7 @@ namespace BombsAway
                             label_Dead.Visible = true;
                             label_Dead.Text = "You died. You have " + lives + " lives remaining. \nPress Space to restart.";
                         }
-                    }
+                    }*/
                 }
                 else
                 {
