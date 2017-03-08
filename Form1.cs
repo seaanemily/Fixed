@@ -50,7 +50,6 @@ namespace BombsAway
         int Speed_Fall = 4;
         int Score = 0;
         int Time = 100;
-        int lives = 5;
         #endregion
         #region Boolean Functions, "Check functions"
         public Boolean InAirNoCollision(PictureBox tar)
@@ -303,7 +302,6 @@ namespace BombsAway
             pb_Player.Image = Character.stand_r;
             Score = 0;
             Time = 100;
-            lives = 5;
             GameOn = true;
         }
         /*public void CreateBoom(int x, int y)
