@@ -157,7 +157,7 @@
             this.pb_NPC2.Image = global::BombsAway.Enemy.Enemy_left;
             this.pb_NPC2.Location = new System.Drawing.Point(85, 131);
             this.pb_NPC2.Name = "pb_NPC2";
-            this.pb_NPC2.Size = new System.Drawing.Size(20, 20);
+            this.pb_NPC2.Size = new System.Drawing.Size(43, 52);
             this.pb_NPC2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_NPC2.TabIndex = 10;
             this.pb_NPC2.TabStop = false;
@@ -168,7 +168,7 @@
             this.pb_NPC1.Image = global::BombsAway.Properties.Resources.Enemy_right;
             this.pb_NPC1.Location = new System.Drawing.Point(513, 156);
             this.pb_NPC1.Name = "pb_NPC1";
-            this.pb_NPC1.Size = new System.Drawing.Size(20, 20);
+            this.pb_NPC1.Size = new System.Drawing.Size(43, 52);
             this.pb_NPC1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_NPC1.TabIndex = 9;
             this.pb_NPC1.TabStop = false;

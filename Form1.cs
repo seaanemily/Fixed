@@ -955,7 +955,14 @@ namespace BombsAway
 
         private void enemytimer_Tick(object sender, EventArgs e)
         {
-
+            if(pb_NPC1 == null)
+            {
+                if(pb_NPC2 == null)
+                {
+                    
+                    
+                }
+            }
         }
     }
 }
