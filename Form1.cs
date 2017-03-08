@@ -36,6 +36,7 @@ namespace BombsAway
         Boolean LastDirRight = true;    // Whats the last dir facing
         Boolean Sword_L = false;        //Player's sword swing left
         Boolean Sword_R = false;        //Player's sword swing right
+        Boolean Alive = true;           //Does the player still have lives left?
         Boolean GameOn = false;         //Is the game on?
         Boolean GodMode = false;
         //Boolean Debug = false;
@@ -45,10 +46,11 @@ namespace BombsAway
         int Force = 0;
         int BombSize = 16;
         int Speed_Movement = 3;
-        int Speed_Jump = 3;
-        int Speed_Fall = 3;
+        int Speed_Jump = 4;
+        int Speed_Fall = 4;
         int Score = 0;
-        int Time = 60;
+        int Time = 100;
+        int lives = 5;
         #endregion
         #region Boolean Functions, "Check functions"
         public Boolean InAirNoCollision(PictureBox tar)
@@ -300,7 +302,8 @@ namespace BombsAway
             pb_NPC2.Location = new System.Drawing.Point(WorldFrame.Width-10, WorldFrame.Size.Height - 1 - pb_NPC2.Height);
             pb_Player.Image = Character.stand_r;
             Score = 0;
-            Time = 60;
+            Time = 100;
+            lives = 5;
             GameOn = true;
         }
         /*public void CreateBoom(int x, int y)
@@ -372,7 +375,6 @@ namespace BombsAway
                     else
                     {
                         GameOn = true;          //Game resumes, death text changes back
-                        label_Dead.Text = "You died, press Space to start";
                         label_Dead.Visible = false;
                     }
                     break;
@@ -548,7 +550,18 @@ namespace BombsAway
                     }
                     else
                     {
-                        Dead();
+                        if(lives <= 0)
+                        {
+                            Dead();
+                        }
+                        else
+                        {
+                            lives = lives - 1;
+                            Alive = true;
+                            GameOn = false;
+                            label_Dead.Visible = true;
+                            label_Dead.Text = "You died. You have " + lives + " lives remaining. \nPress Space to restart.";
+                        }
                     }
                 }
                 else
@@ -766,12 +779,16 @@ namespace BombsAway
                     Bombs[i] = null;
                 }
             }*/
-            label1.Text = "Time Left:" + Time--;
             if(Time <= 0)
             {
                 GameOn = false;
                 label_Dead.Visible = true;
                 label_Dead.Text = "You ran out of time. Press Space to restart";
+                label1.Text = "Time: 0";
+            }
+            else
+            {
+                label1.Text = "Time Left:" + Time--;
             }
             if (!label_Dead.Visible)
             {
@@ -909,10 +926,6 @@ namespace BombsAway
         }
 
         private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void GetTimeLeft()
         {
 
         }
